@@ -36,10 +36,10 @@ const gameBoard = ((container, players) => {
             }
         }
         // check diagonals
-        if (board[0] != '' && board[0] && board[4] && board[0] == board[8]) {
+        if (board[0] != '' && board[0] == board[4] && board[0] == board[8]) {
             return board[0];
         }
-        if (board[6] != '' && board[6] && board[4] && board[6] == board[2]) {
+        if (board[6] != '' && board[6] == board[4] && board[6] == board[2]) {
             return board[6];
         }
         if (board.some(x => x == '')) {
